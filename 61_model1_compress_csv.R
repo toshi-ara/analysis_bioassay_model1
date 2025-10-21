@@ -4,7 +4,10 @@ filelist <- c(
     "model1_parameters_boot_params.csv",
     "model1_parameters_distribution.csv",
     "model1_simulation_raw.csv",
-    "model1_simulation_summary.csv"
+    "model1_simulation_summary.csv",
+    "model1_parameters_compareRMSE.csv",
+    "model1_parameters_compareD50.csv",
+    "model1_parameters_robust_boot_params.csv"
 )
 
 zipfile <- "SupplementalData.zip"

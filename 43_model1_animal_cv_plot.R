@@ -242,7 +242,7 @@ dev.off()
 ####################
 
 filepattern <- "fig_model1_animal_fitcurve_cv_(toxic|lethal)\\.pdf$"
-zipfile <- "FigS3.zip"
+zipfile <- "FigS5.zip"
 
 if (file.exists(zipfile)) {
     file.remove(zipfile)
