@@ -74,7 +74,7 @@ for (i in seq_along(jt)) {
 ####################
 
 filepattern <- "fig_model1_simulation_(toxic|lethal)_\\d+\\.pdf$"
-zipfile <- "FigS4.zip"
+zipfile <- "FigS6.zip"
 
 if (file.exists(zipfile)) {
     file.remove(zipfile)

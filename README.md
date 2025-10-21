@@ -27,6 +27,20 @@
     - fig_model1_animal_fitcurve_toxic.pdf
     - fig_model1_animal_fitcurve_lethal.pdf
 
+## 24_model1_animal_models.R
+- rda/model1_models.RData
+
+## 25_model1_animal_models_table.R
+- Table/TableS1.tex
+- Table/TableS2.tex
+- csv/model1_parameters_compareRMSE.csv
+- csv/model1_parameters_compareD50.csv
+
+## 26_model1_animal_models_plot.R
+- FigS2.zip
+    - fig_model1_animal_fitcurve_compare_toxic.pdf
+    - fig_model1_animal_fitcurve_compare_lethal.pdf
+
 ## 31_model1_animal_boot.R
 - rda/model1_animal_probit_boot.RData")
     - res_boot: list of boot function
@@ -39,9 +53,22 @@
 
 ## 33_model1_animal_boot_plot.R
 - Fig3.pdf    ## histogram of parameters (bootstrap sample)
-- FigS2.zip   ## histogram of parameters (bootstrap sample)
+- FigS3.zip   ## histogram of parameters (bootstrap sample)
     - fig_model1_animal_parameter_boot_toxic.pdf
     - fig_model1_animal_parameter_boot_lethal.pdf
+
+## 34_model1_animal_boot_robust.R
+- rda/model1_models.RData
+
+## 35_model1_animal_boot_robust_table.R
+- rda/model1_animal_probit_robust_boot_params.RData
+- Table/TableS3.tex
+- csv/model1_parameters_robust_boot_params.csv
+
+## 36_model1_animal_boot_robust_plot.R
+- FigS4.zip
+    - fig_model1_animal_parameter_robust_boot_toxic.pdf
+    - fig_model1_animal_parameter_robust_boot_lethal.pdf
 
 ## 41_model1_animal_cv.R
 - rda/animal_data_split_cv.RData
@@ -55,7 +82,7 @@
 
 ## 43_model1_animal_cv_plot.R
 - Fig4.pdf    ## probit curve by training data / scatter plot by test data
-- FigS3.zip   ## probit curve by training data / scatter plot by test data
+- FigS5.zip   ## probit curve by training data / scatter plot by test data
     - fig_model1_animal_fitcurve_cv_toxic.pdf
     - fig_model1_animal_fitcurve_cv_lethal.pdf
 
@@ -71,11 +98,11 @@
 
 ## 53_model1_simulation_plot.R
 - Fig5.pdf    ## vilolin plot by Monte Carlo simulation
-- FigS4.zip   ## dose-response curve
+- FigS6.zip   ## dose-response curve
     - fig_model1_animal_simulation_toxic_##.pdf
     - fig_model1_animal_simulation_lethal_##.pdf
 
 ## 61_model1_compress_csv.R
 - SupplementalData.zip
-    - above 4 csv files
+    - above 7 csv files
 

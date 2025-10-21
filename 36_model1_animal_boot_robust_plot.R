@@ -12,7 +12,7 @@ library(patchwork)
 ## load analyzed data
 ########################################
 
-load("rda/model1_animal_probit_boot_params.RData")
+load("rda/model1_animal_probit_robust_boot_params.RData")
 load("rda/common_variables.RData")
 
 source("common_scripts.R")
@@ -87,7 +87,7 @@ WIDTH <- 10
 HEIGHT <- 7
 
 
-cairo_pdf(file = "Fig3.pdf",
+cairo_pdf(file = "FigS4.pdf",
           width = WIDTH, height = HEIGHT)
 print(p_comb)
 dev.off()
@@ -130,12 +130,12 @@ p_all <- lapply(res_boot_plot, function(x) {
 WIDTH <- 6
 HEIGHT <- 3
 
-cairo_pdf(file = "result/fig_model1_animal_parameter_boot_toxic.pdf",
+cairo_pdf(file = "result/fig_model1_animal_parameter_robust_boot_toxic.pdf",
           width = WIDTH, height = HEIGHT, onefile = TRUE)
 print(p_all[[1]]$p)
 dev.off()
 
-cairo_pdf(file = "result/fig_model1_animal_parameter_boot_lethal.pdf",
+cairo_pdf(file = "result/fig_model1_animal_parameter_robust_boot_lethal.pdf",
           width = WIDTH, height = HEIGHT, onefile = TRUE)
 print(p_all[[2]]$p)
 dev.off()
@@ -145,8 +145,8 @@ dev.off()
 ## archive as zip file
 ####################
 
-filepattern <- "fig_model1_animal_parameter_boot_(toxic|lethal)\\.pdf$"
-zipfile <- "FigS3.zip"
+filepattern <- "fig_model1_animal_parameter_robust_boot_(toxic|lethal)\\.pdf$"
+zipfile <- "FigS4.zip"
 
 if (file.exists(zipfile)) {
     file.remove(zipfile)
