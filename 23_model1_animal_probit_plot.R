@@ -31,7 +31,7 @@ title_sprintf <- c("Toxic", "Lethal")
 # plot TD50/LD50 and 95% CI at each judgement time
 ####################
 .theme <- list(
-    labs(x = "Judgement time (min)", y = "Dose (mg/kg)"),
+    labs(x = "Judgment time (min)", y = "Dose (mg/kg)"),
     theme_bw(),
     theme(
         axis.text = element_text(size = 14, color = "black"),

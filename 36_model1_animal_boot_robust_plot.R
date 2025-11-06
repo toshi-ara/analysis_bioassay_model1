@@ -110,7 +110,7 @@ plot_param_time <- function(x, param, jt, theme) {
         geom_vline(data = param, aes(xintercept = lwr)) +
         geom_vline(data = param, aes(xintercept = upr)) +
         labs(x = "Parameter Value", y = "Frequency",
-             title = sprintf("Judgement time: %d sec", jt)) +
+             title = sprintf("Judgment time: %d sec", jt)) +
         facet_wrap(~ Parameter, scale = "free") +
         theme_bw() +
         theme

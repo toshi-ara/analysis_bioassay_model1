@@ -103,7 +103,7 @@ plot_d50_time_violin <- function(dat, dat_summary, seed) {
                      fun = identity,
                      geom = "crossbar",
                      width = 0.8) +
-        labs(x = "Judgement Time (min)", y = "Dose (mg/kg)") +
+        labs(x = "Judgment Time (min)", y = "Dose (mg/kg)") +
         facet_wrap(~ reaction, scales = "free_y", labeller=label_parsed) +
         theme_bw() +
         theme(

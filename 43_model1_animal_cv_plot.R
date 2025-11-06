@@ -61,7 +61,7 @@ plot_curve_cv_facet <- function(data_probit,
                            labels = yval * 100,
                            minor_breaks = NULL) +
         labs(x = "Dose (mg/kg)", y = "Response rate (%)") +
-        ggtitle(sprintf("Judgement time: %d sec", judgement_time)) +
+        ggtitle(sprintf("Judgment time: %d sec", judgement_time)) +
         facet_wrap(~ fold) +
         theme_bw() +
         theme(
@@ -221,7 +221,7 @@ HEIGHT <- 8
 cairo_pdf(file = "Fig4.pdf",
           width = WIDTH, height = HEIGHT)
 print(p1$p[[1]] &
-      ggtitle(paste("Judgement time:", round(p1$judgement_time / 60, 2), "min")))
+      ggtitle(paste("Judgment time:", round(p1$judgement_time / 60, 2), "min")))
 dev.off()
 
 
